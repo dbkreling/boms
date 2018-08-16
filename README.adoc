@@ -1,6 +1,6 @@
-= WildFly BOMs
+= JBoss EAP BOMs
 
-The WildFly BOMs project provides Maven BOM files, which includes dependency management compatible with (same version) WildFly. These files manage the version of the dependencies you may need to build, test or debug your project, ensuring you always get a compatible stack.
+The JBoss EAP BOMs project provides Maven BOM files, which includes dependency management compatible with (same version) JBoss EAP. These files manage the version of the dependencies you may need to build, test or debug your project, ensuring you always get a compatible stack.
 
 The following BOMs are available:
 
@@ -25,7 +25,7 @@ To use a BOM, import into your dependency management. For example, if you want t
             <artifactId>jboss-eap-ee-with-tools</artifactId>
             <scope>import</scope>
             <type>pom</type>
-            <version>${wildfly.version}</version>
+            <version>${eap.version}</version>
         </dependency>
     </dependencies>
 </dependencyManagement> 
