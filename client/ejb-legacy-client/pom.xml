@@ -36,7 +36,7 @@
 
     <packaging>pom</packaging>
 
-    <name>WildFly BOMs: EJB Client Legacy Builder</name>
+    <name>JBoss EAP BOMs: EJB Client Legacy Builder</name>
 
     <description>
         This artifact builds a bill of materials (BOM) for EJB client legacy usage.
@@ -82,7 +82,7 @@
                             <bomGroupId>org.jboss.eap</bomGroupId>
                             <bomArtifactId>wildfly-ejb-client-legacy-bom</bomArtifactId>
                             <bomVersion>${project.version}</bomVersion>
-                            <bomName>WildFly BOMs: EJB Legacy Client</bomName>
+                            <bomName>JBoss EAP BOMs: EJB Legacy Client</bomName>
                             <bomDescription>This artifact provides a bill of materials (BOM) for remoting based EJB for clients which require 100% API compatiblity with EAP 7.0 and earlier releases. It is recommended to use the primary wildfly-ejb-client-bom if possible.</bomDescription>
                             <bomWithDependencies>true</bomWithDependencies>
                             <licenses>true</licenses>

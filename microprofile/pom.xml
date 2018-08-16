@@ -35,7 +35,7 @@
 
     <artifactId>jboss-eap-xp-microprofile-builder</artifactId>
 
-    <name>WildFly BOMs: MicroProfile Builder</name>
+    <name>JBoss EAP XP BOMs: MicroProfile Builder</name>
     <description>This artifact builds a bill of materials (BOM) for MicroProfile Dependency Management</description>
 
     <licenses>
@@ -80,7 +80,7 @@
                             <bomGroupId>${project.groupId}</bomGroupId>
                             <bomArtifactId>jboss-eap-xp-microprofile</bomArtifactId>
                             <bomVersion>${project.version}</bomVersion>
-                            <bomName>WildFly BOMs: MicroProfile</bomName>
+                            <bomName>JBoss EAP XP BOMs: MicroProfile</bomName>
                             <bomDescription>MicroProfile Dependency Management.</bomDescription>
                             <licenses>true</licenses>
                             <inheritExclusions>UNMANAGED</inheritExclusions>

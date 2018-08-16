@@ -36,8 +36,8 @@
 
     <artifactId>jboss-eap-ee-with-tools-builder</artifactId>
 
-    <name>WildFly BOMs: EE with Tools Builder</name>
-    <description>This artifact builds a bill of materials (BOM) for WildFly EE with Deployment and Testing Tools</description>
+    <name>JBoss EAP BOMs: EE with Tools Builder</name>
+    <description>This artifact builds a bill of materials (BOM) for JBoss EAP EE with Deployment and Testing Tools</description>
 
     <licenses>
         <license>
@@ -134,8 +134,8 @@
                             <bomGroupId>${project.groupId}</bomGroupId>
                             <bomArtifactId>jboss-eap-ee-with-tools</bomArtifactId>
                             <bomVersion>${project.version}</bomVersion>
-                            <bomName>WildFly BOMs: EE with Tools</bomName>
-                            <bomDescription>Dependency Management for WildFly EE with Deployment and Testing Tools.</bomDescription>
+                            <bomName>JBoss EAP BOMs: EE with Tools</bomName>
+                            <bomDescription>Dependency Management for JBoss EAP EE with Deployment and Testing Tools.</bomDescription>
                             <licenses>true</licenses>
                             <inheritExclusions>NONE</inheritExclusions>
                             <includeTransitives>false</includeTransitives>

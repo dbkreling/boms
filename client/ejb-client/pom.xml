@@ -36,7 +36,7 @@
 
     <packaging>pom</packaging>
 
-    <name>WildFly BOMs: EJB Client Builder</name>
+    <name>JBoss EAP BOMs: EJB Client Builder</name>
 
     <description>
         This artifact builds a bill of materials (BOM) for EJB client usage.
@@ -82,7 +82,7 @@
                             <bomGroupId>org.jboss.eap</bomGroupId>
                             <bomArtifactId>wildfly-ejb-client-bom</bomArtifactId>
                             <bomVersion>${project.version}</bomVersion>
-                            <bomName>WildFly BOMs: EJB Client</bomName>
+                            <bomName>JBoss EAP BOMs: EJB Client</bomName>
                             <bomDescription>This artifact provides a bill of materials (BOM) for remoting based EJB usage. Importing this bom into your project will give you the maven artifacts you need to perform remote EJB calls.</bomDescription>
                             <bomWithDependencies>true</bomWithDependencies>
                             <licenses>true</licenses>
