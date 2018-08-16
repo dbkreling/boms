@@ -50,7 +50,7 @@
         <dependencies>
             <!-- base import of server's dep management -->
             <dependency>
-                <groupId>org.wildfly</groupId>
+                <groupId>org.jboss.eap</groupId>
                 <artifactId>wildfly-feature-pack-parent</artifactId>
                 <version>${version.server}</version>
                 <type>pom</type>
