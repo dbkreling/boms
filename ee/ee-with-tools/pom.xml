@@ -23,8 +23,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.wildfly.bom</groupId>
-        <artifactId>wildfly-ee-builder</artifactId>
+        <groupId>org.jboss.bom</groupId>
+        <artifactId>jboss-eap-ee-builder</artifactId>
         <!--
         Maintain separation between the artifact id and the version to help prevent
         merge conflicts between commits changing the GA and those changing the V.
@@ -34,7 +34,7 @@
 
     <packaging>pom</packaging>
 
-    <artifactId>wildfly-ee-with-tools-builder</artifactId>
+    <artifactId>jboss-eap-ee-with-tools-builder</artifactId>
 
     <name>WildFly BOMs: EE with Tools Builder</name>
     <description>This artifact builds a bill of materials (BOM) for WildFly EE with Deployment and Testing Tools</description>
@@ -127,12 +127,12 @@
                         <configuration>
                             <parent>
                                 <groupId>${project.groupId}</groupId>
-                                <artifactId>wildfly-ee</artifactId>
+                                <artifactId>jboss-eap-ee</artifactId>
                                 <version>${project.version}</version>
                                 <relativePath/>
                             </parent>
                             <bomGroupId>${project.groupId}</bomGroupId>
-                            <bomArtifactId>wildfly-ee-with-tools</bomArtifactId>
+                            <bomArtifactId>jboss-eap-ee-with-tools</bomArtifactId>
                             <bomVersion>${project.version}</bomVersion>
                             <bomName>WildFly BOMs: EE with Tools</bomName>
                             <bomDescription>Dependency Management for WildFly EE with Deployment and Testing Tools.</bomDescription>
