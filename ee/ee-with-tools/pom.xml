@@ -218,6 +218,14 @@
                             <includePlugins>
                                 <includePlugin>org.wildfly.plugins:wildfly-maven-plugin</includePlugin>
                             </includePlugins>
+                            <addExclusions>
+                                <exclusion>
+                                    <dependencyGroupId>org.apache.httpcomponents</dependencyGroupId>
+                                    <dependencyArtifactId>httpclient</dependencyArtifactId>
+                                    <exclusionGroupId>commons-codec</exclusionGroupId>
+                                    <exclusionArtifactId>commons-codec</exclusionArtifactId>
+                                </exclusion>
+                            </addExclusions>
                         </configuration>
                     </execution>
                 </executions>

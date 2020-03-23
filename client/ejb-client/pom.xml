@@ -87,6 +87,14 @@
                             <bomWithDependencies>true</bomWithDependencies>
                             <licenses>true</licenses>
                             <inheritExclusions>UNMANAGED</inheritExclusions>
+                            <addExclusions>
+                                <exclusion>
+                                    <dependencyGroupId>org.wildfly.wildfly-http-client</dependencyGroupId>
+                                    <dependencyArtifactId>wildfly-http-ejb-client</dependencyArtifactId>
+                                    <exclusionGroupId>org.kohsuke.metainf-services</exclusionGroupId>
+                                    <exclusionArtifactId>metainf-services</exclusionArtifactId>
+                                </exclusion>
+                            </addExclusions>
                             <includeDependencies>
                                 <!-- ejb client, the main artifact -->
                                 <dependency>

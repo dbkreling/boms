@@ -87,6 +87,44 @@
                             <bomWithDependencies>true</bomWithDependencies>
                             <licenses>true</licenses>
                             <inheritExclusions>UNMANAGED</inheritExclusions>
+                            <addExclusions>
+                                <exclusion>
+                                    <dependencyGroupId>com.sun.xml.messaging.saaj</dependencyGroupId>
+                                    <dependencyArtifactId>saaj-impl</dependencyArtifactId>
+                                    <exclusionGroupId>javax.xml.soap</exclusionGroupId>
+                                    <exclusionArtifactId>javax.xml.soap-api</exclusionArtifactId>
+                                </exclusion>
+                                <exclusion>
+                                    <dependencyGroupId>jboss.jaxbintros</dependencyGroupId>
+                                    <dependencyArtifactId>jboss-jaxb-intros</dependencyArtifactId>
+                                    <exclusionGroupId>javax.xml.bind</exclusionGroupId>
+                                    <exclusionArtifactId>jaxb-api</exclusionArtifactId>
+                                </exclusion>
+                                <exclusion>
+                                    <dependencyGroupId>org.glassfish.jaxb</dependencyGroupId>
+                                    <dependencyArtifactId>jaxb-runtime</dependencyArtifactId>
+                                    <exclusionGroupId>jakarta.xml.bind</exclusionGroupId>
+                                    <exclusionArtifactId>jakarta.xml.bind-api</exclusionArtifactId>
+                                </exclusion>
+                                <exclusion>
+                                    <dependencyGroupId>org.apache.santuario</dependencyGroupId>
+                                    <dependencyArtifactId>xmlsec</dependencyArtifactId>
+                                    <exclusionGroupId>jakarta.xml.bind</exclusionGroupId>
+                                    <exclusionArtifactId>jakarta.xml.bind-api</exclusionArtifactId>
+                                </exclusion>
+                                <exclusion>
+                                    <dependencyGroupId>net.shibboleth.utilities</dependencyGroupId>
+                                    <dependencyArtifactId>java-support</dependencyArtifactId>
+                                    <exclusionGroupId>com.google.code.findbugs</exclusionGroupId>
+                                    <exclusionArtifactId>jsr305</exclusionArtifactId>
+                                </exclusion>
+                                <exclusion>
+                                    <dependencyGroupId>com.google.guava</dependencyGroupId>
+                                    <dependencyArtifactId>guava</dependencyArtifactId>
+                                    <exclusionGroupId>com.google.code.findbugs</exclusionGroupId>
+                                    <exclusionArtifactId>jsr305</exclusionArtifactId>
+                                </exclusion>
+                            </addExclusions>
                             <excludeDependencies>
                                 <dependency>
                                     <groupId>log4j</groupId>
