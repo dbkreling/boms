@@ -196,7 +196,6 @@
     <modules>
         <module>client</module>
         <module>ee</module>
-        <module>microprofile</module>
     </modules>
 
 </project>
