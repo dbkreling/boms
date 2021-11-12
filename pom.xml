@@ -86,6 +86,7 @@
         <!-- The full remote maven repo URL; can be overridden via -D for special use cases -->
         <maven.repository.url>${maven.repository.protocol}://repository.jboss.org/nexus/content/groups/public/</maven.repository.url>
         <!-- https://access.redhat.com/maven-repository -->
+        <maven.redhat.ea.repository.url>${maven.repository.protocol}://maven.repository.redhat.com/earlyaccess/all/</maven.redhat.ea.repository.url>
         <maven.redhat.repository.url>${maven.repository.protocol}://maven.repository.redhat.com/ga/</maven.redhat.repository.url>
         <maven.repository.product.url>${maven.repository.protocol}://download.devel.redhat.com/brewroot/repos/jb-eap-8.0-maven-build/latest/maven/</maven.repository.product.url>
     </properties>
@@ -133,7 +134,21 @@
             <name>JBoss Enterprise Maven Repository</name>
             <url>${maven.redhat.repository.url}</url>
             <layout>default</layout>
-        </repository>        
+        </repository>
+        <repository>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </snapshots>
+            <id>jboss-enterprise-ea-maven-repository</id>
+            <name>JBoss Enterprise Early Access Maven Repository</name>
+            <url>${maven.redhat.ea.repository.url}</url>
+            <layout>default</layout>
+        </repository>
     </repositories>
 
     <pluginRepositories>
@@ -172,7 +187,18 @@
             <id>jboss-enterprise-maven-repository</id>
             <name>JBoss Enterprise Maven Repository</name>
             <url>${maven.redhat.repository.url}</url>
-        </pluginRepository>        
+        </pluginRepository>
+        <pluginRepository>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <id>jboss-enterprise-ea-maven-repository</id>
+            <name>JBoss Enterprise Early Access Maven Repository</name>
+            <url>${maven.redhat.ea.repository.url}</url>
+        </pluginRepository>
     </pluginRepositories>
 
     <build>
@@ -186,6 +212,7 @@
                         <includeRepositories>
                             <id>jboss-public-repository-group</id>
                             <id>jboss-enterprise-maven-repository</id>
+                            <id>jboss-enterprise-ea-maven-repository</id>
                         </includeRepositories>
                     </configuration>
                 </plugin>
