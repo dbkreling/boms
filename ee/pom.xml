@@ -54,7 +54,7 @@
             <!-- base import of server's dep management -->
             <dependency>
                 <groupId>org.jboss.eap</groupId>
-                <artifactId>wildfly-feature-pack-parent</artifactId>
+                <artifactId>wildfly-ee-feature-pack-parent</artifactId>
                 <version>${version.server}</version>
                 <type>pom</type>
                 <scope>import</scope>
