@@ -178,7 +178,7 @@
                                 <!-- client for usage through jndi -->
                                 <dependency>
                                     <groupId>org.wildfly</groupId>
-                                    <artifactId>wildfly-naming-client-jakarta</artifactId>
+                                    <artifactId>wildfly-naming-client</artifactId>
                                 </dependency>
                                 <!-- provides the jms client properties -->
                                 <dependency>
@@ -186,6 +186,12 @@
                                     <artifactId>wildfly-client-properties</artifactId>
                                 </dependency>
                             </includeDependencies>
+                            <excludeDependencies>
+                                <dependency>
+                                    <groupId>org.springframework</groupId>
+                                    <artifactId>spring-context</artifactId>
+                                </dependency>
+                            </excludeDependencies>
                         </configuration>
                     </execution>
                 </executions>

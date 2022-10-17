@@ -95,6 +95,12 @@
                                     <exclusionArtifactId>metainf-services</exclusionArtifactId>
                                 </exclusion>
                             </addExclusions>
+                            <excludeDependencies>
+                                <dependency>
+                                    <groupId>org.springframework</groupId>
+                                    <artifactId>spring-context</artifactId>
+                                </dependency>
+                            </excludeDependencies>
                             <includeDependencies>
                                 <!-- ejb client, the main artifact -->
                                 <dependency>
