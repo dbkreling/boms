@@ -124,6 +124,18 @@
                                     <exclusionGroupId>com.google.code.findbugs</exclusionGroupId>
                                     <exclusionArtifactId>jsr305</exclusionArtifactId>
                                 </exclusion>
+                                <exclusion>
+                                    <dependencyGroupId>org.apache.cxf</dependencyGroupId>
+                                    <dependencyArtifactId>cxf-rt-ws-security</dependencyArtifactId>
+                                    <exclusionGroupId>org.ehcache</exclusionGroupId>
+                                    <exclusionArtifactId>ehcache</exclusionArtifactId>
+                                </exclusion>
+                                <exclusion>
+                                    <dependencyGroupId>org.apache.cxf</dependencyGroupId>
+                                    <dependencyArtifactId>cxf-rt-ws-rm</dependencyArtifactId>
+                                    <exclusionGroupId>org.ehcache</exclusionGroupId>
+                                    <exclusionArtifactId>ehcache</exclusionArtifactId>
+                                </exclusion>
                             </addExclusions>
                             <excludeDependencies>
                                 <dependency>
